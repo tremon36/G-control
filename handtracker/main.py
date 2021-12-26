@@ -2,7 +2,6 @@ import collections
 
 import cv2
 import mediapipe as mp
-import time
 import threading
 import keyboard
 import time
@@ -54,15 +53,14 @@ while True:
 
         if results.multi_hand_landmarks:  # si hay una mano en la pantalla
             if recording < LONGITUD_GRABACION:
-                h, w, c = img.shape
                 x0 = 0
                 y0 = 0
                 for handlandmarks in results.multi_hand_landmarks:  # para cada mano
 
                     for id, lm in enumerate(handlandmarks.landmark):  # para cada punto de esa mano
                         if id == 0:
-                            x0 = lm.x * w
-                            y0 = lm.y * h
+                            x0 = lm.x
+                            y0 = lm.y
                             if recording == 0:
                                 prevx = x0
                                 prevy = y0
@@ -70,7 +68,7 @@ while True:
                             prevx = x0
                             prey = y0
                         elif id == 1 or id == 4 or id == 5 or id == 8 or id == 9 or id == 12 or id == 13 or id == 16 or id == id == 17 or id == 20:
-                            listaInterna.append((lm.x * w - x0, lm.y * h - y0))
+                            listaInterna.append((lm.x - x0, lm.y - y0))
 
                     mpDraw.draw_landmarks(img, handlandmarks)  # dibujar los puntos de la mano
                 recording = recording + 1
