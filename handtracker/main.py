@@ -37,7 +37,7 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH, 192)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 108)
 
 mpHands = mp.solutions.hands
-hands = mpHands.Hands()
+hands = mpHands.Hands(max_num_hands= 1)
 mpDraw = mp.solutions.drawing_utils
 
 prevx = 0
@@ -67,7 +67,7 @@ while True:
                             listaInterna.append((x0 - prevx, y0 - prevy))
                             prevx = x0
                             prey = y0
-                        elif id == 1 or id == 4 or id == 5 or id == 8 or id == 9 or id == 12 or id == 13 or id == 16 or id == id == 17 or id == 20:
+                        elif id == 1 or id == 4 or id == 5 or id == 8 or id == 9 or id == 12 or id == 13 or id == 16 or id == 17 or id == 20:
                             listaInterna.append((lm.x - x0, lm.y - y0))
 
                     mpDraw.draw_landmarks(img, handlandmarks)  # dibujar los puntos de la mano
