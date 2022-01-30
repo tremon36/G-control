@@ -4,7 +4,7 @@ G-Control is a system that supports gesture control for computers.
 
 Information on usage here: [link]
 
-demo video here: [Download](https://github.com/tremon36/G-control/blob/main/Demo/demo_video.mp4) 
+demo video here: [Download](https://github.com/tremon36/G-control/raw/main/Demo/demo_video.mp4) 
 
 
 
