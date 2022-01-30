@@ -15,15 +15,15 @@ Please do not use python 3.10 or above, as the mediapipe library still does not 
 
 Dependencies used (install them via pip3)
 
- - tensorflow :` pip3 install tensoflow`
+ - tensorflow : ` pip3 install tensoflow`
 
- - mediapipe :` pip3 install mediapipe`
+ - mediapipe :  ` pip3 install mediapipe`
 
- - pynput :` pip3 install pynput`
+ - pynput :     ` pip3 install pynput`
 
- - pyautogui :` pip3 install pyautogui`
+ - pyautogui :  ` pip3 install pyautogui`
 
- - opencv :` pip3 install opencv-python`
+ - opencv :     ` pip3 install opencv-python`
 
 
 
