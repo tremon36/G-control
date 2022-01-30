@@ -36,5 +36,5 @@ Dependencies used (install them via pip3)
 
  - Ricardo Carrero Bardón
  - Salman
- - Héctor
+ - Héctor de la Cruz Díaz
  - Marcos Carlero Buitrago
