@@ -1,6 +1,6 @@
 **G-CONTROL**
 
-G-Control is a system that supports gesture control for computers.
+G-Control is a system that provides gesture control for computers.
 
 Information on usage here: [link]
 
