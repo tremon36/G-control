@@ -1,6 +1,6 @@
 **G-CONTROL**
 
-G-Control is a system that supports gesture control for computers.
+G-Control is a system that provides gesture control for computers.
 
 Information on usage here: [link]
 
@@ -24,7 +24,12 @@ Dependencies used (install them via pip3)
  - pyautogui :  ` pip3 install pyautogui`
 
  - opencv :     ` pip3 install opencv-python`
-
+  
+ **USAGE**
+ 
+ If you just want to test G-Control, then navigate to `G-control/Control System` then run `main.py` with `python3 main.py`
+ If you want to check the gesture record program and network trainer in order to create your own gestures, they can be found on `G-control/Network Trainer` and 
+ `G-control/Gestures Recorder`
 
 
  **CONTRIBUTORS**
