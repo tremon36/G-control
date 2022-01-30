@@ -35,6 +35,6 @@ Dependencies used (install them via pip3)
  **CONTRIBUTORS**
 
  - Ricardo Carrero Bardón
- - Salman
+ - Salman Bouikou Nouinou
  - Héctor de la Cruz Díaz
  - Marcos Carlero Buitrago
