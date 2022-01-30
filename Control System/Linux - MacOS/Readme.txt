@@ -2,6 +2,7 @@ dependencies:
 
 opencv
 mediapipe
-tensorflow (keras)
-tkinter
+tensorflow
+pynput
+pyautogui
 python 3.9 or below
