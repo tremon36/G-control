@@ -72,7 +72,10 @@ def checkCondition(lastFramePositions):
     distNorm = distanciaPuntos(index, indexBase)
 
 
-    return distMiddleTo1/distNorm < 0.8 and distRingTo1/distNorm < 0.9 and distpinkyTo1/distNorm < 0.8
+     try:
+        return distMiddleTo1/distNorm < 0.8 and distRingTo1/distNorm < 0.9 and distpinkyTo1/distNorm < 0.8
+    except ZeroDivisionError:
+        return True
 
 def distanciaPuntos(punto1, punto2):
     return math.sqrt(pow(punto1[0] - punto2[0], 2) + pow(punto1[1] - punto2[1], 2))
