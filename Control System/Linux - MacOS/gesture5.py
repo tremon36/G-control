@@ -72,7 +72,7 @@ def checkCondition(lastFramePositions):
     distNorm = distanciaPuntos(index, indexBase)
 
 
-     try:
+    try:
         return distMiddleTo1/distNorm < 0.8 and distRingTo1/distNorm < 0.9 and distpinkyTo1/distNorm < 0.8
     except ZeroDivisionError:
         return True
